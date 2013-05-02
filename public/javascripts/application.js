@@ -16,7 +16,6 @@ $(document).ready(function() {
   
   function updateCorrectRowCount() { 
     var correctRow = '111XXX2221111';
-    var rowList = {'111XXX2221111', 'XXX2221112222'};
     var signs;
     var count = 0;
     var rows = $(".ram tr").first();
