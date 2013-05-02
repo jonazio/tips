@@ -18,7 +18,7 @@ $(document).ready(function() {
     var correctRow = '111XXX2221111';
     var signs;
     var count = 0;
-    var rows = $(".ram tr").first();
+    var rows = $(".ramheading tr").first().next();
     var length = correctRow.length;
     var corrSign;
     var rownum = 0;

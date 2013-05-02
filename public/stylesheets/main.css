@@ -9,17 +9,17 @@
     } 
 	
 .ramheading {
-      border: 1px solid black;
 	  width: 80px;
 	  height: 15px;
 	  table-layout:fixed;
+	  border-color: transparent;
       background-color: hsl(120,65%,75%);
       border-radius: 5px;
 	  text-align:center;
 	  }
 
 .matcher {
-	  width: 150px;
+	  width: 200px;
 	  height: 15px;
 	  table-layout:fixed;
       background-color:hsl(120,65%,75%);
@@ -53,12 +53,13 @@
   margin-top: 10px;
   margin-left:10px;
   float:left;
-  width: 150px;
+  width: 200px;
 }
 
 #ram {
   float:left;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 body {
