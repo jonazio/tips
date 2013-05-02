@@ -1,0 +1,66 @@
+.ram {
+      border: 1px solid black;
+	  width: 80px;
+	  height: 15px;
+	  table-layout:fixed;
+	  background-color: hsl(120,75%,85%);
+	  border-radius: 5px;
+	  text-align:center;
+    } 
+	
+.ramheading {
+      border: 1px solid black;
+	  width: 80px;
+	  height: 15px;
+	  table-layout:fixed;
+      background-color: hsl(120,65%,75%);
+      border-radius: 5px;
+	  text-align:center;
+	  }
+
+.matcher {
+	  width: 150px;
+	  height: 15px;
+	  table-layout:fixed;
+      background-color:hsl(120,65%,75%);
+      border-color:hsl(120,65%,75%);
+      border-color:transparent;
+      border-radius:5px;
+	  text-align:left;
+	  }
+
+.tecken {
+	  background-color: white;
+}
+
+.button {
+	background-color: hsl(120,65%,75%);
+}
+
+#header {
+   background-color: hsl(120,65%,75%);
+   height: 50px;
+}
+
+#menu {
+   background-color: hsl(120,65%,55%);
+   float:left;
+   height: 500px;
+   width: 70px;
+}
+
+#matcher {
+  margin-top: 10px;
+  margin-left:10px;
+  float:left;
+  width: 150px;
+}
+
+#ram {
+  float:left;
+  margin-top: 10px;
+}
+
+body {
+  background-color: hsl(120,95%,95%);
+}
