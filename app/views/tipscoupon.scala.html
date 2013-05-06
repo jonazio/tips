@@ -1,0 +1,25 @@
+@(correctTipsRow: String, noOfMatches: Int)
+      <div id="matcher">
+        <table class="matcher" border="1">
+          <tr><th>&nbsp</th></tr>
+          @for(x <- 1 to noOfMatches) {
+            @tipsrowno(x)
+          }
+     	</table>
+      </div>
+      
+      </div>
+      <div id="ram">
+		  <table class="ramheading" border="1">
+		       <tr>
+		         <th>1</th>
+		         <th>X</th>
+		         <th>2</th>
+		       </tr>
+		        @for(x <- 1 to noOfMatches){
+		          @tipsrow()
+		        }
+		  </table>
+		   <h3>Antal rätt:<h3>
+		   <span class="correctRows">@correctTipsRow</span> 
+	   </div>
