@@ -11,6 +11,9 @@ $(document).ready(function() {
 	  $(this).text($(this).data("value"));
 	}
 	updateCorrectRowCount();
+	
+	jsRoutes.controllers.Application.testoutput();
+	
   });
   
   
