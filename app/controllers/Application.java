@@ -50,7 +50,7 @@ public class Application extends Controller {
         return ok(
             Routes.javascriptRouter("jsRoutes",
             
-                // Routes for Projects
+                // Routes for Tips
                 controllers.routes.javascript.Application.testoutput()
                 
             )

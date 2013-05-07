@@ -12,7 +12,15 @@ $(document).ready(function() {
 	}
 	updateCorrectRowCount();
 	
-	jsRoutes.controllers.Application.testoutput();
+	jsRoutes.controllers.Application.testoutput().ajax({
+		context: this,
+		success: function() {
+
+		},
+		error: function(err) {
+			
+		}	
+	});
 	
   });
   
