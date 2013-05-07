@@ -5,6 +5,7 @@
 # Home page
 GET     /                           controllers.Application.index()
 GET		/test/						controllers.Application.testoutput()
+POST	/upload						controllers.Application.upload()
 
 # Javascript routing
 GET /javascriptRoutes               controllers.Application.javascriptRoutes

@@ -12,110 +12,16 @@
         <script type="text/javascript" src="@routes.Application.javascriptRoutes"></script>
     </head>
     <body>
+      @fileupload()
       <div id="header">
-      <h1>Rätta tipset, maddahfakkah!</h1>
+      <h1>Tipsrättaren 2013</h1>
+      <i>Because you're worth it</i>
       </div>
       
       <div id="menu">
         <b>test</b>
         @test("Testoutput")
       </div>
-      
-      <div id="matcher">
-        <table class="matcher" border="1">
-          <tr><th>&nbsp</th></tr>
-          <tr><td>1</td></tr>
-          <tr><td>2</td></tr>
-          <tr><td>3</td></tr>
-          <tr><td>4</td></tr>
-          <tr><td>5</td></tr>
-          <tr><td>6</td></tr>
-          <tr><td>7</td></tr>
-          <tr><td>8</td></tr>
-          <tr><td>9</td></tr>
-          <tr><td>10</td></tr>
-          <tr><td>11</td></tr>
-          <tr><td>12</td></tr>
-          <tr><td>13</td></tr>
-     	</table>
-      </div>
-      
-      </div>
-      <div id="ram">
-		  <table class="ramheading" border="1">
-		       <tr>
-		         <th>1</th>
-		         <th>X</th>
-		         <th>2</th>
-		       </tr>
-		 	  <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-		       <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-		       <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-		       <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-		       <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-			   <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
-		       </tr>
-		  </table>
-		   <h3>Antal rätt:<h3>
-		   <span class="correctRows">@correctTipsRow</span> 
-	   </div>
+        @tipscoupon(correctTipsRow, 13)
     </body>
 </html>
