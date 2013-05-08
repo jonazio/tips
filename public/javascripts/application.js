@@ -16,7 +16,8 @@ $(document).ready(function() {
   $("#fileupload").on('click', function(){
 		jsRoutes.controllers.Tips.fileupload().ajax({
 			success: function(data){
-				$("#mainframe").children().html(data);
+				$('#mainframe div').empty();
+				$("#mainframe").html(data);
 			}	
 		});	  
   });
@@ -24,8 +25,8 @@ $(document).ready(function() {
   $("#correctrow").on('click', function(){
 		jsRoutes.controllers.Tips.correctRow().ajax({
 			success: function(data){
-				$("#mainframe").children().html(data);
-				$("#")
+				$('#mainframe div').empty();
+				$("#mainframe").html(data);
 			}	
 		});	  
 });

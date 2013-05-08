@@ -17,7 +17,7 @@ public class Tips extends Controller {
 	}
 	
 	public static Result correctRow() {
-		return ok(tipscoupon.render("1231231231231", 13));
+		return ok(tipscoupon.render("10", 13));
 	}
 
 }
