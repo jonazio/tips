@@ -4,8 +4,15 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-GET		/test						controllers.Application.testoutput()
 POST	/upload						controllers.Application.upload()
+
+# test output
+POST	/test						controllers.Tips.testoutput()
+
+# handle main window
+POST 	/file						controllers.Tips.fileupload()
+POST	/correctrow					controllers.Tips.correctRow()
+
 
 # Javascript routing
 GET     /assets/javascripts/routes          controllers.Application.javascriptRoutes()

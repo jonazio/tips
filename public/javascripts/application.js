@@ -10,19 +10,25 @@ $(document).ready(function() {
 	{
 	  $(this).text($(this).data("value"));
 	}
-	updateCorrectRowCount();
-	
-	jsRoutes.controllers.Application.testoutput().ajax({
-		context: this,
-		success: function() {
-
-		},
-		error: function(err) {
-			
-		}	
-	});
-	
+	updateCorrectRowCount();	
   });
+  
+  $("#fileupload").on('click', function(){
+		jsRoutes.controllers.Tips.fileupload().ajax({
+			success: function(data){
+				$("#mainframe").children().html(data);
+			}	
+		});	  
+  });
+  
+  $("#correctrow").on('click', function(){
+		jsRoutes.controllers.Tips.correctRow().ajax({
+			success: function(data){
+				$("#mainframe").children().html(data);
+				$("#")
+			}	
+		});	  
+});
   
   
   function updateCorrectRowCount() { 

@@ -40,10 +40,6 @@ public class Application extends Controller {
         
         // make sure that the uploaded-file is a txt-file
     }
-    
-    public static Result testoutput() {
-    	return ok(test.render("Testing"));
-    }
 
     public static Result javascriptRoutes() {
         response().setContentType("text/javascript");
@@ -51,7 +47,9 @@ public class Application extends Controller {
             Routes.javascriptRouter("jsRoutes",
             
                 // Routes for Tips
-                controllers.routes.javascript.Application.testoutput()
+                controllers.routes.javascript.Tips.testoutput(),
+                controllers.routes.javascript.Tips.fileupload(),
+                controllers.routes.javascript.Tips.correctRow()
                 
             )
         );
