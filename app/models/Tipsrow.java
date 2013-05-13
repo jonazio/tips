@@ -3,9 +3,11 @@ package models;
 public class Tipsrow {
 	
 	public String tipsrow;
+	public int correctMatches;
 	
 	public Tipsrow(String tipsrow){
-		this.tipsrow = tipsrow;		
+		this.tipsrow = tipsrow;	
+		correctMatches = 0;
 	}
 
 	public int countMatchingCharacters (String tipsrad){
