@@ -34,15 +34,13 @@ public class Application extends Controller {
             String output = sc.nextLine();
             output = sc.nextLine();
             sc.close();
-            return ok(output);
+            return ok(tipscoupon.render("10", 13));
         } else {
             flash("error", "Missing file");
             return redirect(routes.Application.index()); 
         }
-        
-
     }
-
+    
     public static Result javascriptRoutes() {
         response().setContentType("text/javascript");
         return ok(

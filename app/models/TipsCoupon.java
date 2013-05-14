@@ -19,6 +19,16 @@ public class TipsCoupon extends Model{
 		this.tipsrows = tipsrows;
 	}
 	
+	public TipsCoupon (Scanner scanner){
+		while (scanner.hasNextLine()){
+			addTipsrow("test");
+		}
+	}
+	
+	public void addTipsrow(String tipsrow){
+		tipsrows.add(new Tipsrow(tipsrow));
+	}
+	
 	public void correctMatrix (String correctRow){
 		
 	}
