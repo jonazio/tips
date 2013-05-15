@@ -26,5 +26,23 @@ public class Tips extends Controller {
 		return ok(tipscoupon.render("10", 13));
 	}
 
+    public static Result upload() throws FileNotFoundException {
+        MultipartFormData body = request().body().asMultipartFormData();
+        FilePart tips = body.getFile("tips");
+        if (tips != null) {     
+            // make sure that the uploaded-file is a txt-file TODO
+            //String fileName = tips.getFilename();
+            // String contentType = tips.getContentType(); 
+            File file = tips.getFile();
+            Scanner sc = new Scanner(file);
+            String output = sc.nextLine();
+            output = sc.nextLine();
+            sc.close();
+            return ok("File uploaded");
+        } else {
+            flash("error", "Missing file");
+            return redirect(routes.Application.index()); 
+        }
+    }
 
 }

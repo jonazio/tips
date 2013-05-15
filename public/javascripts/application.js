@@ -31,7 +31,6 @@ $(document).ready(function() {
 		});	  
 });
   
-  
   function updateCorrectRowCount() { 
     var correctRow = '111XXX2221111';
     var signs;
