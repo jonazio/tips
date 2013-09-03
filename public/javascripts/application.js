@@ -31,6 +31,15 @@ $(document).ready(function() {
 		});	  
 });
   
+  $("#correctrow2").on('click', function(){
+		jsRoutes.controllers.Tips.correctRow2().ajax({
+			success: function(data){
+				$('#mainframe div').empty();
+				$("#mainframe").html(data);
+			}	
+		});	  
+});
+  
   function updateCorrectRowCount() { 
     var correctRow = '111XXX2221111';
     var signs;

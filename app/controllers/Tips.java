@@ -11,6 +11,7 @@ import play.mvc.Http.MultipartFormData.FilePart;
 import views.html.test;
 import views.html.fileupload;
 import views.html.tipscoupon;
+import views.html.tipscoupon2;
 
 public class Tips extends Controller {
 	
@@ -24,6 +25,10 @@ public class Tips extends Controller {
 	
 	public static Result correctRow() {
 		return ok(tipscoupon.render("10", 13));
+	}
+	
+	public static Result correctRow2() {
+		return ok(tipscoupon2.render("10", 13));
 	}
 
     public static Result upload() throws FileNotFoundException {

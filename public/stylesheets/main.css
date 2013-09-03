@@ -19,6 +19,27 @@
 	  text-align:center;
 	  }
 	  
+.ramheading2 {
+	  width: 400px;
+	  height: 15px;
+	  table-layout:fixed;
+	  border-color: transparent;
+      background-color: hsl(120,65%,75%);
+      border-radius: 5px;
+	  text-align:center;
+	  }	 
+	  
+#mainframe {
+  margin-top: 10px;
+  margin-left:10px;
+  float: left;
+}
+
+.matchno {
+	text-align:left;
+	margin-right:5px;
+} 
+	  
 .matcher {
 	  width: 200px;
 	  height: 15px;
@@ -46,15 +67,18 @@
 #menu {
    background-color: hsl(120,65%,55%);
    float:left;
-   height: 500px;
+   height: 700px;
    width: 100px;
 }
 
+
 #matcher {
-  margin-top: 10px;
-  margin-left:10px;
   float:left;
   width: 200px;
+}
+
+#inmatning {
+	width: 100%;
 }
 
 #fileuploadwindow {
@@ -66,8 +90,13 @@
 
 #ram {
   float:left;
-  margin-top: 10px;
   margin-left: 10px;
+  height: 400px;
+  width: 700px;
+}
+
+#results {
+  float:left;
 }
 
 body {
