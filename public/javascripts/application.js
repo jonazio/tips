@@ -39,12 +39,40 @@ $(document).ready(function() {
 			}	
 		});	  
 });
+
   
   function updateCorrectRowCount() { 
+    var correctRow = "";
+    var tempStr;
+    
+    var rows = $(".ramheading2 tr:gt(0)");
+    
+    rows.each(function(index){
+    	
+    	if ($("td:nth-child(2)", this).text() == "1") {
+    		tempStr = "1";
+    	} else if (($("td:nth-child(3)", this).text() == "X")){
+    		tempStr = "X";
+    	} else if (($("td:nth-child(4)", this).text() == "2")){
+    		tempStr = "2";
+		} else{
+			tempStr = "_"
+		}
+    	
+    	correctRow = correctRow + tempStr
+    });
+	jsRoutes.controllers.Tips.correctRow3(correctRow).ajax({
+		success: function(data){
+			$(".correctRows").html(data);
+		}	
+	});	  
+  };
+  
+  function updateCorrectRowCountOld() { 
     var correctRow = '111XXX2221111';
     var signs;
     var count = 0;
-    var rows = $(".ramheading tr").first().next();
+    var rows = $(".ramheading2 tr").first().next();
     var length = correctRow.length;
     var corrSign;
     var rownum = 0;

@@ -12,6 +12,7 @@ POST	/test						controllers.Tips.testoutput()
 POST 	/file						controllers.Tips.fileupload()
 POST	/correctrow					controllers.Tips.correctRow()
 POST	/correctrow2				controllers.Tips.correctRow2()
+POST	/summary					controllers.Tips.summary(correctRow	: String)
 POST	/upload						controllers.Tips.upload()
 
 # Javascript routing

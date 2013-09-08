@@ -6,13 +6,15 @@ import javax.persistence.*;
 
 import play.db.ebean.Model;
 
-@Entity
+
+// database support not necessary right now TODO
+//@Entity
 public class TipsCoupon extends Model{
 	
-	@Id
+	//@Id
 	public Long id; 
 	
-	@OneToMany(cascade = CascadeType.REMOVE)
+	//@OneToMany(cascade = CascadeType.REMOVE)
 	public List<Tipsrow> tipsrows = new ArrayList<Tipsrow>();
 	
 	public TipsCoupon (List<Tipsrow> tipsrows) {
@@ -21,7 +23,7 @@ public class TipsCoupon extends Model{
 	
 	public TipsCoupon (Scanner scanner){
 		while (scanner.hasNextLine()){
-			addTipsrow("test");
+			addTipsrow(scanner.nextLine());
 		}
 	}
 	
@@ -31,6 +33,12 @@ public class TipsCoupon extends Model{
 	
 	public void correctMatrix (String correctRow){
 		
+	}
+	
+	public void printOut() {
+		for (int a = 0; a < tipsrows.size(); a++){
+			System.out.println(tipsrows.get(a).tipsrow);
+		}
 	}
 
 }
