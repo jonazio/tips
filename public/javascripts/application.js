@@ -61,7 +61,7 @@ $(document).ready(function() {
     	
     	correctRow = correctRow + tempStr
     });
-	jsRoutes.controllers.Tips.correctRow3(correctRow).ajax({
+	jsRoutes.controllers.Tips.summary(correctRow).ajax({
 		success: function(data){
 			$(".correctRows").html(data);
 		}	

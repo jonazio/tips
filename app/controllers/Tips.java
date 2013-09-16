@@ -13,6 +13,7 @@ import views.html.test;
 import views.html.fileupload;
 import views.html.tipscoupon;
 import views.html.tipscoupon2;
+import views.html.summary;
 import models.TipsCoupon;
 
 public class Tips extends Controller {
@@ -36,7 +37,10 @@ public class Tips extends Controller {
 	}
 	
 	public static Result summary(String correctRow) {
-		return ok("13");
+		if (tipsCoupon != null ){
+			return ok(summary.render(tipsCoupon.correctMatrix(correctRow)));
+		}
+		return ok(correctRow);
 	}
 
     public static Result upload() throws FileNotFoundException {
