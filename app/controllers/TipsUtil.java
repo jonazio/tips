@@ -2,6 +2,7 @@ package controllers;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -15,6 +16,15 @@ import play.libs.WS;
 import org.apache.commons.io.IOUtils;
 
 public class TipsUtil extends Controller{
+	
+	private static final String teamPattern = "([A-Za-zÅÄÖåäö]*[\\s\\.]{0,1}[A-Za-zÅÄÖåäö]*\\.{0,1})";
+	private static final String repeatingPattern = "(s*<span class=\"G\">\\s* </span>)*";
+	private static final String matchNoPattern = "<span class=\"G\">(\\d{1,2})\\. </span>";
+	private static final String teamOnePattern = "\\s*<span class=\"G\">"+teamPattern+" </span>";
+	private static final String teamTwoPattern = "<span class=\"G\">-"+teamPattern+" </span>";
+	private static final String scoresPattern = "<span class=\"G\">(\\d{1,2}-\\d{1,2}) </span>";
+	private static final String resultPattern = "<span class=\"G\">([1X2]{1})\\s{1,2}</span>";
+	private static final String teamsPattern = "\\s*<span class=\"G\">"+teamPattern+"-"+teamPattern+" </span>";
 	
 	private static int minimum(int a, int b, int c) {
         return Math.min(Math.min(a, b), c);
@@ -50,12 +60,13 @@ public class TipsUtil extends Controller{
 			      WS.url(url).get().map(
 			    		  new Function<WS.Response, Result>() {
 			    	          public Result apply(WS.Response response) throws IOException {
-			    	        	  StringWriter writer = new StringWriter();
+			    	        	  
+			    	        	  StringWriter writer = new StringWriter();	
 			    	        	  InputStream test = response.getBodyAsStream();
-			    	        	  IOUtils.copy(test, writer);
+			    	        	  InputStreamReader encoding = new InputStreamReader(test, "UTF-8");
+			    	        	  IOUtils.copy(encoding, writer);
 			    	        	  String theString = writer.toString();
 			    	        	  //System.out.println(theString);
-			    	        	  System.out.println(theString.indexOf("1. "));
 			    	        	  findData(theString);
 			    	        	  
 						return ok("Test");
@@ -66,13 +77,16 @@ public class TipsUtil extends Controller{
 			    	  }
 		
 	public static void findData(String inString) {
-		System.out.println("findData");
-		Pattern MY_PATTERN = Pattern.compile("<span class=\"G\">\\d{1,2}\\. </span>\\s*<span class=\"G\">\\w* </span>");
-		Matcher m = MY_PATTERN.matcher(inString);
+		Pattern matchResults = Pattern.compile(matchNoPattern+teamOnePattern+repeatingPattern+teamTwoPattern+repeatingPattern+scoresPattern+repeatingPattern+resultPattern);
+		Matcher m = matchResults.matcher(inString);
 		while (m.find()){
-			//System.out.println("hittade förekomster: " + m.groupCount());
-			System.out.println(m.group(0));
-			
+			System.out.println(m.group(1) + ". "+ m.group(2) + "- " + m.group(4) + " " + m.group(6) + " " + m.group(8));	
+		}
+		
+		Pattern matchResults2 = Pattern.compile(matchNoPattern+teamsPattern+repeatingPattern+scoresPattern+repeatingPattern+resultPattern);
+		m = matchResults2.matcher(inString);
+		while (m.find()){
+			System.out.println(m.group(1) + ". "+  m.group(2) + " - " + m.group(3) + " " + m.group(5) + " " + m.group(7));			
 		}
 	}
 	
