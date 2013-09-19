@@ -44,7 +44,6 @@ public class TipsCoupon extends Model{
 		System.out.println("correctMatrix");
 		// should not be a static value TODO
 		int matrix[] = new int[14]; //{0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-		System.out.println("test " + matrix[0]);
 		if (tipsrows == null) {
 			return matrix;
 		}

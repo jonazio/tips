@@ -37,6 +37,7 @@ public class Tips extends Controller {
 	}
 	
 	public static Result summary(String correctRow) {
+		Result test = TipsUtil.fetchCorrectRow();
 		if (tipsCoupon != null ){
 			return ok(summary.render(tipsCoupon.correctMatrix(correctRow)));
 		}
