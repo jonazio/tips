@@ -1,12 +1,12 @@
 @(correctRows: Array[Int])
 
 
-
+@if(correctRows != null){
 <table>
       @for(correctRow <- correctRows) {
       <tr>
-        <td>@correctRow</td>
+        <td>@correctRow rader med </td>
       </tr>   
       }
-
 </table>
+}

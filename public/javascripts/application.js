@@ -41,6 +41,11 @@ $(document).ready(function() {
 });
 
   
+  function updateMatchResults() {
+	  
+	  
+  }
+  
   function updateCorrectRowCount() { 
     var correctRow = "";
     var tempStr;

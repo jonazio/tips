@@ -27,6 +27,7 @@ public class TipsCoupon extends Model{
 	}
 	
 	public TipsCoupon (Scanner scanner){
+		tipsrows.clear();
 		// first row in the file determines the type of tips (euro/stryk etc)
 		if (scanner.hasNextLine()){
 			tipsType = scanner.nextLine();
@@ -41,16 +42,16 @@ public class TipsCoupon extends Model{
 	}
 		
 	public int[] correctMatrix (String correctRow){
-		System.out.println("correctMatrix");
+		//System.out.println("correctMatrix");
 		// should not be a static value TODO
 		int matrix[] = new int[14]; //{0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 		if (tipsrows == null) {
 			return matrix;
 		}
 		for (int a = 0; a < tipsrows.size(); a++){
-			System.out.println("lev-dist: " + TipsUtil.computeLevenshteinDistance(correctRow, tipsrows.get(a).tipsrow));
+			/*System.out.println("lev-dist: " + TipsUtil.computeLevenshteinDistance(correctRow, tipsrows.get(a).tipsrow));
 			System.out.println(correctRow);
-			System.out.println(tipsrows.get(a).tipsrow);
+			System.out.println(tipsrows.get(a).tipsrow);*/
 			matrix[TipsUtil.computeLevenshteinDistance(correctRow, tipsrows.get(a).tipsrow)]++;
 		}
 		for (int a = 0; a < matrix.length; a++){
@@ -60,7 +61,7 @@ public class TipsCoupon extends Model{
 	}
 	
 	public void printOut() {
-		System.out.println("Rader för " + tipsType);
+		System.out.println("Rader för " + tipsType + " size: " + tipsrows.size());
 		for (int a = 0; a < tipsrows.size(); a++){
 			System.out.println(tipsrows.get(a).tipsrow);
 		}

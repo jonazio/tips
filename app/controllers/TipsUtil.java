@@ -7,6 +7,10 @@ import java.io.StringWriter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import models.MatchResult;
+import models.TipsResult;
+import models.Tipsrow;
+
 import org.apache.commons.io.IOUtils;
 
 import play.mvc.*;
@@ -18,13 +22,18 @@ import org.apache.commons.io.IOUtils;
 public class TipsUtil extends Controller{
 	
 	private static final String teamPattern = "([A-Za-zÅÄÖåäö]*[\\s\\.]{0,1}[A-Za-zÅÄÖåäö]*\\.{0,1})";
-	private static final String repeatingPattern = "(s*<span class=\"G\">\\s* </span>)*";
-	private static final String matchNoPattern = "<span class=\"G\">(\\d{1,2})\\. </span>";
-	private static final String teamOnePattern = "\\s*<span class=\"G\">"+teamPattern+" </span>";
-	private static final String teamTwoPattern = "<span class=\"G\">-"+teamPattern+" </span>";
-	private static final String scoresPattern = "<span class=\"G\">(\\d{1,2}-\\d{1,2}) </span>";
-	private static final String resultPattern = "<span class=\"G\">([1X2]{1})\\s{1,2}</span>";
-	private static final String teamsPattern = "\\s*<span class=\"G\">"+teamPattern+"-"+teamPattern+" </span>";
+	private static final String spanPattern = "<span class=\"[CGW]{1}\">";
+	private static final String repeatingPattern = "(\\s*"+spanPattern+"\\s* </span>)*";
+	private static final String repeatingPattern2 = "(\\s*<span class=\"W\">\\s* </span>)*";
+	private static final String matchNoPattern = spanPattern+"(\\d{1,2})\\. </span>";
+	private static final String teamOnePattern = "\\s*"+spanPattern+teamPattern+" </span>";
+	private static final String teamTwoPattern = spanPattern+"-"+teamPattern+" </span>";
+	private static final String scoresPattern = spanPattern+"(\\d{1,2}-\\d{1,2}) </span>";
+	private static final String resultPattern = spanPattern+"([1X2]{1})\\s{1,2}</span>";
+	private static final String teamsPattern = "\\s*"+spanPattern+teamPattern+"-"+teamPattern+" </span>";
+	
+	private static final String correctRowsPattern = "\\s*<span class=\"W\">(\\d{2}) (</span>\\s*<span class=\"W\">)*rätt: </span>";
+    private static final String payoutPattern = "\\s*<span class=\"W\">\\s*(((\\d{1,3}\\.)*\\d{1,3})(\\s{1}|</span>\\s*<span class=\"W\">\\s*)kr|Ingen utd) </span>";
 	
 	private static int minimum(int a, int b, int c) {
         return Math.min(Math.min(a, b), c);
@@ -52,42 +61,48 @@ public class TipsUtil extends Controller{
 	}
 
 	
-	public static Result fetchCorrectRow() {
-		// fetch url for stryktipset (551) or europatipset (553)
-		//static for the moment TODO
-		String url = "http://www.svt.se/svttext/web/pages/553.html";
-		return async(
-			      WS.url(url).get().map(
-			    		  new Function<WS.Response, Result>() {
-			    	          public Result apply(WS.Response response) throws IOException {
-			    	        	  
-			    	        	  StringWriter writer = new StringWriter();	
-			    	        	  InputStream test = response.getBodyAsStream();
-			    	        	  InputStreamReader encoding = new InputStreamReader(test, "UTF-8");
-			    	        	  IOUtils.copy(encoding, writer);
-			    	        	  String theString = writer.toString();
-			    	        	  //System.out.println(theString);
-			    	        	  findData(theString);
-			    	        	  
-						return ok("Test");
-			    	          }
-			    	        }
-			    	      )
-			    	    );
-			    	  }
+	public static void findData(String inString, TipsResult tipsResult) {
 		
-	public static void findData(String inString) {
+		char[] results = new char[13];
+		
+		int endPoint = inString.indexOf("TOPPTIPSET");
+		if (endPoint != -1){
+			inString = inString.substring(0,endPoint);
+		}
+		
 		Pattern matchResults = Pattern.compile(matchNoPattern+teamOnePattern+repeatingPattern+teamTwoPattern+repeatingPattern+scoresPattern+repeatingPattern+resultPattern);
 		Matcher m = matchResults.matcher(inString);
 		while (m.find()){
 			System.out.println(m.group(1) + ". "+ m.group(2) + "- " + m.group(4) + " " + m.group(6) + " " + m.group(8));	
+			results[new Integer(m.group(1))-1] = m.group(8).charAt(0);
+			tipsResult.matchResults[new Integer(m.group(1))-1] = new MatchResult(m.group(2), m.group(4), m.group(8), 0, 0);
 		}
 		
 		Pattern matchResults2 = Pattern.compile(matchNoPattern+teamsPattern+repeatingPattern+scoresPattern+repeatingPattern+resultPattern);
 		m = matchResults2.matcher(inString);
 		while (m.find()){
-			System.out.println(m.group(1) + ". "+  m.group(2) + " - " + m.group(3) + " " + m.group(5) + " " + m.group(7));			
+			System.out.println(m.group(1) + ". "+  m.group(2) + " - " + m.group(3) + " " + m.group(5) + " " + m.group(7));	
+			results[new Integer(m.group(1))-1] = m.group(7).charAt(0);
+			tipsResult.matchResults[new Integer(m.group(1))-1] = new MatchResult(m.group(2), m.group(3), m.group(7), 0, 0);
 		}
+		
+		Pattern matchResults3 = Pattern.compile(correctRowsPattern+repeatingPattern2+payoutPattern);
+		m = matchResults3.matcher(inString);
+		while (m.find()){
+			if (m.group(5) != null){
+				System.out.println(m.group(1) + " " + m.group(5));		
+			} else {
+				System.out.println(m.group(1) + " " + m.group(4));		
+			}
+		}
+		
+		String result = "";
+		for (int a = 0; a < 13; a++){
+			result += results[a];
+		}
+		
+		tipsResult.correctRow.tipsrow = result;
+
 	}
 	
 	
