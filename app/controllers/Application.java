@@ -32,8 +32,8 @@ public class Application extends Controller {
                 controllers.routes.javascript.Tips.correctRow(),
                 controllers.routes.javascript.Tips.correctRow2(),
                 controllers.routes.javascript.Tips.summary(),
-                controllers.routes.javascript.Tips.upload(),
-                controllers.routes.javascript.Tips.matches()
+                //controllers.routes.javascript.Tips.matches()
+                controllers.routes.javascript.Tips.upload()
                 
             )
         );

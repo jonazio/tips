@@ -75,7 +75,7 @@ public class TipsUtil extends Controller{
 		while (m.find()){
 			System.out.println(m.group(1) + ". "+ m.group(2) + "- " + m.group(4) + " " + m.group(6) + " " + m.group(8));	
 			results[new Integer(m.group(1))-1] = m.group(8).charAt(0);
-			tipsResult.matchResults[new Integer(m.group(1))-1] = new MatchResult(m.group(2), m.group(4), m.group(8), 0, 0);
+			tipsResult.matchResults[new Integer(m.group(1))-1] = new MatchResult(m.group(2), m.group(4), m.group(8), new Integer(m.group(6).substring(0,1)), new Integer(m.group(6).substring(2,3)));
 		}
 		
 		Pattern matchResults2 = Pattern.compile(matchNoPattern+teamsPattern+repeatingPattern+scoresPattern+repeatingPattern+resultPattern);
@@ -83,7 +83,7 @@ public class TipsUtil extends Controller{
 		while (m.find()){
 			System.out.println(m.group(1) + ". "+  m.group(2) + " - " + m.group(3) + " " + m.group(5) + " " + m.group(7));	
 			results[new Integer(m.group(1))-1] = m.group(7).charAt(0);
-			tipsResult.matchResults[new Integer(m.group(1))-1] = new MatchResult(m.group(2), m.group(3), m.group(7), 0, 0);
+			tipsResult.matchResults[new Integer(m.group(1))-1] = new MatchResult(m.group(2), m.group(3), m.group(7), new Integer(m.group(5).substring(0,1)), new Integer(m.group(5).substring(2,3)));
 		}
 		
 		Pattern matchResults3 = Pattern.compile(correctRowsPattern+repeatingPattern2+payoutPattern);
@@ -91,8 +91,10 @@ public class TipsUtil extends Controller{
 		while (m.find()){
 			if (m.group(5) != null){
 				System.out.println(m.group(1) + " " + m.group(5));		
+				savePayout(m.group(1), m.group(5), tipsResult);
 			} else {
-				System.out.println(m.group(1) + " " + m.group(4));		
+				System.out.println(m.group(1) + " " + m.group(4));	
+				savePayout(m.group(1), m.group(4), tipsResult);
 			}
 		}
 		
@@ -103,6 +105,20 @@ public class TipsUtil extends Controller{
 		
 		tipsResult.correctRow.tipsrow = result;
 
+	}
+	
+	private static void savePayout(String noOfCorrectRows, String payout, TipsResult tipsResult){
+		Integer pay = new Integer(payout.replace(".", "").replace(",", "").replace("Ingen utd", "0"));
+		
+		if (noOfCorrectRows.equals("13")){
+			tipsResult.payout13 = pay;
+		} else if (noOfCorrectRows.equals("12")){
+			tipsResult.payout12 = pay;
+		} else if (noOfCorrectRows.equals("11")){
+			tipsResult.payout11 = pay;
+		} else if (noOfCorrectRows.equals("10")){
+			tipsResult.payout10 = pay;
+		}	
 	}
 	
 	

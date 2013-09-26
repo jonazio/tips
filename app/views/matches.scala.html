@@ -1,4 +1,4 @@
-@(correctTipsRow: String, noOfMatches: Int)
+@(matchResults: Array[MatchResult])
 
   <table class="ramheading2" border="1">
        <tr>
@@ -7,7 +7,14 @@
          <th width="6%">X</th>
          <th width="6%">2</th>
        </tr>
-        @for(x <- 1 to noOfMatches){
-          @tipsrow2(x, correctTipsRow.substring(x-1,x), null)
+       @if(matchResults != null){
+        @for((matchResult, index) <- matchResults.zipWithIndex){
+          @tipsrow2(index+1, matchResult.result, matchResult.homeTeam+"-"+matchResult.awayTeam+"\t"+matchResult.homeScore+"-"+matchResult.awayScore)
         }
+       } else {
+       @for(x <- 1 to 13){
+          @tipsrow2(x, "X", null)
+          <!-- correctTipsRow.substring(x-1,x) -->
+        }
+       }
   </table>

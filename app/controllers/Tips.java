@@ -56,12 +56,12 @@ public class Tips extends Controller {
 		    scanner.close();
 		} catch (IOException e) {
 		}
-		return ok(tipscoupon2.render("111XXX2221111", 13));
+		return ok(tipscoupon2.render("111XXX2221111", null));
 	}
 	
-	public static Result matches(String correctRow, int noOfMatches) {
+	/*public static Result matches(String correctRow, int noOfMatches) {
 		return ok(matches.render(correctRow, noOfMatches));
-	}
+	}*/
 	
 	public static Result summary(final String correctRow) {
 		if (tipsCoupon != null ){
@@ -79,7 +79,8 @@ public class Tips extends Controller {
 				    	        	  IOUtils.copy(encoding, writer);
 				    	        	  String theString = writer.toString();
 				    	        	  TipsUtil.findData(theString, tipsResult);
-				    	        	  return ok(summary.render(tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
+				    	        	  //return ok(summary.render(tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
+				    	        	  return ok(tipscoupon2.render(tipsResult.correctRow.tipsrow, tipsResult.matchResults));
 				    	          }
 				    	        }
 				    	      )

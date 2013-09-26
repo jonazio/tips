@@ -1,5 +1,7 @@
 package models;
 
+import java.awt.List;
+
 public class TipsResult {
 	
 	public Tipsrow correctRow;
