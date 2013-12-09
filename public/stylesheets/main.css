@@ -67,7 +67,7 @@
 #menu {
    background-color: hsl(120,65%,55%);
    float:left;
-   height: 700px;
+   height: 1280px;
    width: 100px;
 }
 
@@ -101,4 +101,8 @@
 
 body {
   background-color: hsl(120,95%,95%);
+}
+
+.summarytext {
+	font-size: medium;
 }

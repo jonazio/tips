@@ -43,7 +43,6 @@ public class Tips extends Controller {
 	
 	public static Result correctRow() {
 		return ok("Ok!");
-		//return ok(tipscoupon.render("111XXX2221111", 13));
 	}
 	
 	//anropas 8 ggr ... varför?!
@@ -56,22 +55,20 @@ public class Tips extends Controller {
 		    scanner.close();
 		} catch (IOException e) {
 		}
-		return ok(tipscoupon2.render("111XXX2221111", null));
+		return ok(tipscoupon2.render("111XXX2221111", null, null));
 	}
-	
-	/*public static Result matches(String correctRow, int noOfMatches) {
-		return ok(matches.render(correctRow, noOfMatches));
-	}*/
 	
 	public static Result summary(final String correctRow) {
 		if (tipsCoupon != null ){
 			// fetch url for stryktipset (551) or europatipset (553)
 			//static for the moment TODO
 			String url = "http://www.svt.se/svttext/web/pages/553.html";
+			// move WS call to another class TODO
 			return async(
 				      WS.url(url).get().map(
 				    		  new Function<WS.Response, Result>() {
 				    	          public Result apply(WS.Response response) throws IOException {
+				    	        	  // initialize tipsResult object
 				    	        	  TipsResult tipsResult = new TipsResult(new Tipsrow("111222111XXXX"), 1000, 100, 10, 1);
 				    	        	  StringWriter writer = new StringWriter();	
 				    	        	  InputStream test = response.getBodyAsStream();
@@ -80,7 +77,7 @@ public class Tips extends Controller {
 				    	        	  String theString = writer.toString();
 				    	        	  TipsUtil.findData(theString, tipsResult);
 				    	        	  //return ok(summary.render(tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
-				    	        	  return ok(tipscoupon2.render(tipsResult.correctRow.tipsrow, tipsResult.matchResults));
+				    	        	  return ok(tipscoupon2.render(tipsResult.correctRow.tipsrow, tipsResult.matchResults, tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
 				    	          }
 				    	        }
 				    	      )
