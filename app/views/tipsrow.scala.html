@@ -1,7 +1,20 @@
-
+@(matchNo: Int, sign: String, teams: String)
 		 	  <tr>
-		         <td class="tecken t1" data-value="1">&nbsp</td>
-		         <td class="tecken tx" data-value="X">&nbsp</td>
-		         <td class="tecken t2" data-value="2">&nbsp</td>
+		 	     <td class="matchno">@matchNo. @teams</td>
+		 	     @if(sign == "1"){
+		         	<td class="t1" data-value="1">1</td>
+		         } else {
+		         	<td class="tecken t1" data-value="1">&nbsp</td>
+		         }
+		         @if(sign == "X"){
+		         	<td class="tx" data-value="X">X</td>
+		         } else {
+		         	<td class="tecken tx" data-value="X">&nbsp</td>
+		         }
+		         @if(sign == "2"){
+		         	<td class="t2" data-value="2">2</td>
+		         } else {
+		         	<td class="tecken t2" data-value="2">&nbsp</td>
+		         }
 		       </tr>
 		       

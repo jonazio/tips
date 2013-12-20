@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import models.Tipsrow;
+import models.results.Tipsrow;
 
 import org.codehaus.jackson.JsonNode;
 import org.junit.*;

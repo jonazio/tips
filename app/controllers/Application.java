@@ -9,7 +9,7 @@ import java.util.Scanner;
 import play.mvc.Http.MultipartFormData;
 import play.mvc.Http.MultipartFormData.FilePart;
 
-import models.Tipsrow;
+import models.results.Tipsrow;
 import play.*;
 import play.mvc.*;
 
@@ -27,12 +27,9 @@ public class Application extends Controller {
             Routes.javascriptRouter("jsRoutes",
             
                 // Routes for Tips
-                controllers.routes.javascript.Tips.testoutput(),
-                controllers.routes.javascript.Tips.fileupload(),
-                controllers.routes.javascript.Tips.correctRow(),
-                controllers.routes.javascript.Tips.correctRow2(),
+                //controllers.routes.javascript.Tips.correctRow(),
                 controllers.routes.javascript.Tips.summary(),
-                //controllers.routes.javascript.Tips.matches()
+                //controllers.routes.javascript.Tips.matches(),
                 controllers.routes.javascript.Tips.upload()
                 
             )

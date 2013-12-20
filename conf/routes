@@ -4,14 +4,11 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET		/correctrow					controllers.Tips.correctRow()
+GET		/file						controllers.Tips.fileUpload()						
 
-# test output
-POST	/test						controllers.Tips.testoutput()
 
 # handle main window
-POST 	/file						controllers.Tips.fileupload()
-POST	/correctrow					controllers.Tips.correctRow()
-POST	/correctrow2				controllers.Tips.correctRow2()
 POST	/summary					controllers.Tips.summary(correctRow	: String)
 POST	/upload						controllers.Tips.upload()
 # POST	/matches					controllers.Tips.matches(correctRow: String, noOfMatches: Integer)

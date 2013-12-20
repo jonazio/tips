@@ -1,5 +1,6 @@
-@(matchResults: Array[MatchResult])
+@(matchResults: Array[models.results.MatchResult])
 
+<div id="matches">
   <table class="ramheading2" border="1">
        <tr>
          <th width="82%">&nbsp</th>
@@ -9,12 +10,15 @@
        </tr>
        @if(matchResults != null){
         @for((matchResult, index) <- matchResults.zipWithIndex){
-          @tipsrow2(index+1, matchResult.result, matchResult.homeTeam+"-"+matchResult.awayTeam+"\t"+matchResult.homeScore+"-"+matchResult.awayScore)
+          @if(matchResult != null){
+          	@tipsrow(index+1, matchResult.result, matchResult.homeTeam+"-"+matchResult.awayTeam+"\t"+matchResult.homeScore+"-"+matchResult.awayScore)
+          }
         }
        } else {
        @for(x <- 1 to 13){
-          @tipsrow2(x, "X", null)
+          @tipsrow(x, "X", null)
           <!-- correctTipsRow.substring(x-1,x) -->
         }
        }
   </table>
+</div>

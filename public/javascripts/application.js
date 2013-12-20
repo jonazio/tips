@@ -23,15 +23,6 @@ $(document).ready(function() {
 		});	  
   });
   
-  $("#correctrow").on('click', function(){
-		jsRoutes.controllers.Tips.correctRow().ajax({
-			success: function(data){
-				$('#mainframe div').empty();
-				$("#mainframe").html(data);
-			}	
-		});	  
-});
-  
   $("#correctrow2").on('click', function(){
 		jsRoutes.controllers.Tips.correctRow2().ajax({
 			success: function(data){

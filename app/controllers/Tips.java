@@ -18,44 +18,33 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Http.MultipartFormData;
 import play.mvc.Http.MultipartFormData.FilePart;
-import views.html.index;
-import views.html.test;
-import views.html.fileupload;
-import views.html.tipscoupon;
-import views.html.tipscoupon2;
-import views.html.summary;
-import views.html.matches;
-import models.TipsCoupon;
-import models.TipsResult;
-import models.Tipsrow;
+import util.*;
+import views.html.fileupload.*;
+import views.html.*;
+import models.*;
+import models.results.TipsCoupon;
+import models.results.TipsResult;
+import models.results.Tipsrow;
 
 public class Tips extends Controller {
 	
 	public static TipsCoupon tipsCoupon;
-		
-	public static Result testoutput() {
-    	return ok(test.render("Det funkar!"));
-    }
 	
-	public static Result fileupload() {
+	public static Result fileUpload() {
 		return ok(fileupload.render());
 	}
 	
-	public static Result correctRow() {
-		return ok("Ok!");
-	}
-	
 	//anropas 8 ggr ... varför?!
-	public static Result correctRow2() {
+	public static Result correctRow() {
 		// read default file for TipsCoupon
-		File file = new File("E:\\projekt\\tipssite\\2013.euro.v39.jonasokaka.12r-Egnarader.txt");
+		File file = new File("E:\\projekt\\tipssite\\2013.euro.v50.jonasokaka.v2-Egnarader.txt");
 		try {
 		    Scanner scanner = new Scanner(file);
 		    tipsCoupon = new TipsCoupon(scanner);
 		    scanner.close();
 		} catch (IOException e) {
 		}
-		return ok(tipscoupon2.render("111XXX2221111", null, null));
+		return ok(tipscoupon.render("111XXX2221111", null, null));
 	}
 	
 	public static Result summary(final String correctRow) {
@@ -75,9 +64,10 @@ public class Tips extends Controller {
 				    	        	  InputStreamReader encoding = new InputStreamReader(test, "UTF-8");
 				    	        	  IOUtils.copy(encoding, writer);
 				    	        	  String theString = writer.toString();
-				    	        	  TipsUtil.findData(theString, tipsResult);
-				    	        	  //return ok(summary.render(tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
-				    	        	  return ok(tipscoupon2.render(tipsResult.correctRow.tipsrow, tipsResult.matchResults, tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
+				    	        	  // should not call a static method TODO
+				    	        	  StryktipsParseResultsImpl parseResults = new StryktipsParseResultsImpl();
+				    	        	  parseResults.findData(theString, tipsResult);
+				    	        	  return ok(tipscoupon.render(tipsResult.correctRow.tipsrow, tipsResult.matchResults, tipsCoupon.correctMatrix(tipsResult.correctRow.tipsrow)));
 				    	          }
 				    	        }
 				    	      )
@@ -99,7 +89,7 @@ public class Tips extends Controller {
             sc.close();
             tipsCoupon.printOut();
             // redirect to tipspage TODO
-            return ok(index.render("111XXX2221111"));
+            return ok(tipscoupon.render("Tipshjälpen", null, null));
         } else {
             flash("error", "Missing file");
             return redirect(routes.Application.index()); 
