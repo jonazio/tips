@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<experttips>
+    <produktid>1</produktid>
+    <produktnamn>Stryktipset</produktnamn>
+    <datum>vecka 08 2014</datum>
+    <omgang>4325</omgang>
+    <experttippare>Mats Forslund</experttippare>
+    <matchanalys></matchanalys>
+    <matchlista>
+        <match>
+            <matchnummer>1</matchnummer>
+            <matchid>2368811</matchid>
+            <hemmalag>Arsenal</hemmalag>
+            <bortalag>Sunderland</bortalag>
+            <tips>1</tips>
+            <kommentar>Arsenal är bra även om formen är lite dalande, man har ju också en del skadeproblem och saknar
+                Walcott, Ramsey och förmodligen också Cazorla. Sunderland krigar för att hålla sig kvar i Premier League
+                men saknar viktiga Fletcher och Brown. Jag spikar Arsenal till 79%.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>81</val1>
+                    <valx>13</valx>
+                    <val2>6</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>1.30</val1>
+                    <valx>5.00</valx>
+                    <val2>9.75</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>2</matchnummer>
+            <matchid>2368806</matchid>
+            <hemmalag>Cardiff</hemmalag>
+            <bortalag>Hull</bortalag>
+            <tips>1</tips>
+            <kommentar>Cardiff väntar fortfarande på Solskjear effekten men jag tror ändå de har en bra chans här, de
+                har dock Medel och Mutch skadade. Jag tycker dock Hull är ett bättre lag och garderar med tvåan trots
+                att Hull har bortaplan.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>38</val1>
+                    <valx>32</valx>
+                    <val2>30</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>9</val1>
+                    <valx>1</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.80</val1>
+                    <valx>2.95</valx>
+                    <val2>2.65</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>3</matchnummer>
+            <matchid>2368809</matchid>
+            <hemmalag>Manchester C</hemmalag>
+            <bortalag>Stoke</bortalag>
+            <tips>1</tips>
+            <kommentar>Manchester C är helt överlägsna på hemmaplan när de möter engelska lag, saknar fortsatt Agúero
+                men man har en bred trupp och vinner ändå. Stoke ser inte så bra ut i år och Guidetti får inte spela här
+                eftersom han är utlånad från Manchester C. Jag tror Manchester C vinner stort och spikar ettan till 79%
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>88</val1>
+                    <valx>8</valx>
+                    <val2>4</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>1.16</val1>
+                    <valx>6.80</valx>
+                    <val2>14.00</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>4</matchnummer>
+            <matchid>2368815</matchid>
+            <hemmalag>West Bromwich</hemmalag>
+            <bortalag>Fulham</bortalag>
+            <tips>1</tips>
+            <kommentar>Otroligt viktigt bottenmöte där inget av lagen har vunnit på länge. Jag tycker dock att WBA ser
+                bättre ut och de har ju också hemmaplan. Fulham har sparkat sin tränare och Felix Magath har tagit över,
+                men man har Steekelburg i målet skadad vilket är ett stort minus. Jag tycker WBA är bättre än Fulham och
+                jag tror de vinner här, jag spikar dem till 53%.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>56</val1>
+                    <valx>26</valx>
+                    <val2>18</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>1.70</val1>
+                    <valx>3.60</valx>
+                    <val2>4.70</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>5</matchnummer>
+            <matchid>2368812</matchid>
+            <hemmalag>West Ham</hemmalag>
+            <bortalag>Southampton</bortalag>
+            <tips>2</tips>
+            <kommentar>West Ham har hittar formen och har 3 raka segrar och har hållit nollan i 4 raka matcher, de
+                saknar dock viktige Carroll som är avstängd. Southampton har varit bra hela säsongen och man är faktiskt
+                bara 3 poäng bakom Manchester U, man spelade med ett B-lag i FA-cupen mot Sunderland och kommer utvilade
+                nu. Jag tycker det är fel favorit här och jag spikar Southampton till 33%.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>33</val1>
+                    <valx>29</valx>
+                    <val2>38</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>6</val1>
+                    <valx>0</valx>
+                    <val2>4</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>3.15</val1>
+                    <valx>3.20</valx>
+                    <val2>2.25</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>6</matchnummer>
+            <matchid>2369798</matchid>
+            <hemmalag>Barnsley</hemmalag>
+            <bortalag>Millwall</bortalag>
+            <tips>1</tips>
+            <kommentar>Barnsley har förstärkt laget och ska vara favoriter här trots att de inte är speciellt bra. Men
+                Millwall är svaga på bortaplan så jag tror mer på Barnsley. De är dock inte att lita på och jag garderar
+                med krysset.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>51</val1>
+                    <valx>29</valx>
+                    <val2>20</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.20</val1>
+                    <valx>3.20</valx>
+                    <val2>3.15</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>7</matchnummer>
+            <matchid>2369773</matchid>
+            <hemmalag>Blackpool</hemmalag>
+            <bortalag>Birmingham</bortalag>
+            <tips>X</tips>
+            <kommentar>Blackpool är helt ur form och har nu 15 raka matcher utan vinst, de har dock sett lite bättre ut
+                de sista matcherna då de i alla fall kryssat. Birmingham är också dåliga för dagen och har massa skador.
+                Jag spelar 1X vilket jag tror räcker.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>45</val1>
+                    <valx>32</valx>
+                    <val2>23</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>9</val1>
+                    <valx>1</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.10</val1>
+                    <valx>3.10</valx>
+                    <val2>3.40</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>8</matchnummer>
+            <matchid>2369764</matchid>
+            <hemmalag>Bolton</hemmalag>
+            <bortalag>Watford</bortalag>
+            <tips>1</tips>
+            <kommentar>Bolton har haft en tung säsong och är absolut inblandade i bottenstriden. Watford ligger lite
+                bättre till men har verkligen inte glänst i år, senast kryssade de bara mot Yeovil vilket inte
+                imponerar. Jag tycker det är fel favorit här och jag chansspikar Bolton på hemmaplan till 34%.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>34</val1>
+                    <valx>31</valx>
+                    <val2>35</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>6</val1>
+                    <valx>0</valx>
+                    <val2>4</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.40</val1>
+                    <valx>3.20</valx>
+                    <val2>2.80</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>9</matchnummer>
+            <matchid>2369792</matchid>
+            <hemmalag>Brighton</hemmalag>
+            <bortalag>Wigan</bortalag>
+            <tips>1</tips>
+            <kommentar>Två lag som bägge är på väg uppåt i form, bägge lagen har också bra häng på kvalplatserna till
+                Premier League. Allra bäst form har nog Wigan men de har bortaplan så jag väljer att spela 1X.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>47</val1>
+                    <valx>26</valx>
+                    <val2>27</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.20</val1>
+                    <valx>3.10</valx>
+                    <val2>3.25</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>10</matchnummer>
+            <matchid>2369751</matchid>
+            <hemmalag>Burnley</hemmalag>
+            <bortalag>Nottingham</bortalag>
+            <tips>1</tips>
+            <kommentar>Burnley ser riktigt stabila ut och jagar en direktplats till Premier League, man har nu 9 raka
+                matcher i ligan utan förlust och man är även obesegrade på hemmaplan. Nottingham är också bra och med i
+                toppstriden men man har massa skador till den här matchen och Vaughan, Cohen, Blackstock, Wilson och
+                Lansbury saknas. Så jag spikar Burnley till 48%.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>50</val1>
+                    <valx>30</valx>
+                    <val2>20</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>8</val1>
+                    <valx>0</valx>
+                    <val2>2</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.20</val1>
+                    <valx>3.10</valx>
+                    <val2>3.20</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>11</matchnummer>
+            <matchid>2369802</matchid>
+            <hemmalag>Charlton</hemmalag>
+            <bortalag>Queens PR</bortalag>
+            <tips>2</tips>
+            <kommentar>Charlton är inget vidare och absolut indragna i nedflyttningsstriden, de har också svag form och
+                har inte vunnit på 6 raka matcher. Queens PR brukar också ha lätt för Charlton men QPR har många skador
+                och Barton är avstängd och formen känns också lite tveksam så jag garderar med krysset.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>15</val1>
+                    <valx>23</valx>
+                    <val2>62</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>0</val1>
+                    <valx>0</valx>
+                    <val2>10</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>4.00</val1>
+                    <valx>3.15</valx>
+                    <val2>1.90</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>12</matchnummer>
+            <matchid>2369769</matchid>
+            <hemmalag>Huddersfield</hemmalag>
+            <bortalag>Sheffield W</bortalag>
+            <tips>1</tips>
+            <kommentar>Huddersfield är ok på hemmaplan och har fått tillbaka en del spelare, man ska vara favoriter här
+                men Sheffield har mycket bra form så jag garderar med krysset trots att Sheffield har en del skador och
+                spelar på bortaplan.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>56</val1>
+                    <valx>26</valx>
+                    <val2>18</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.05</val1>
+                    <valx>3.20</valx>
+                    <val2>3.50</val2>
+                </kalla>
+            </andratips>
+        </match>
+        <match>
+            <matchnummer>13</matchnummer>
+            <matchid>2369807</matchid>
+            <hemmalag>Reading</hemmalag>
+            <bortalag>Blackburn</bortalag>
+            <tips>1</tips>
+            <kommentar>Reading är i bra form och slog senast Queens PR på bortaplan med 3-1, på hemmaplan är man ännu
+                starkare. Blackburn har höjt sig något på slutet men senast var de utspelade av Middlesbrough, de
+                lyckades dock få kryss där men det var mycket tur bakom det resultatet och jag tror de får svårt mot
+                Reading. Jag spikar Reading till 66% trots att de fortsatt har många skador.
+            </kommentar>
+            <andratips>
+                <kalla>
+                    <namn>Svenska folket</namn>
+                    <val1>65</val1>
+                    <valx>21</valx>
+                    <val2>14</val2>
+                </kalla>
+                <kalla>
+                    <namn>Tio tidningar</namn>
+                    <val1>10</val1>
+                    <valx>0</valx>
+                    <val2>0</val2>
+                </kalla>
+                <kalla>
+                    <namn>Oddset</namn>
+                    <val1>2.10</val1>
+                    <valx>3.25</valx>
+                    <val2>3.35</val2>
+                </kalla>
+            </andratips>
+        </match>
+    </matchlista>
+</experttips>

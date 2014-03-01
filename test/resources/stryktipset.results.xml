@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<spelresultat>
+    <spelprodukt>
+        <produktid>1</produktid>
+        <produktnamn>Stryktipset</produktnamn>
+        <spelomgang>
+            <omgang>4325</omgang>
+            <datum>Vecka 08 2014</datum>
+            <spelstatus>Avslutad</spelstatus>
+            <resultat>
+                <match>
+                    <matchnummer>1</matchnummer>
+                    <hemmalag>Arsenal</hemmalag>
+                    <bortalag>Sunderland</bortalag>
+                    <hemmalagkort>Arsenal</hemmalagkort>
+                    <bortalagkort>Sunderl.</bortalagkort>
+                    <hemmalagid>196</hemmalagid>
+                    <bortalagid>274</bortalagid>
+                    <hemmaresultat>4</hemmaresultat>
+                    <bortaresultat>1</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2368811</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>2</matchnummer>
+                    <hemmalag>Cardiff</hemmalag>
+                    <bortalag>Hull</bortalag>
+                    <hemmalagkort>Cardiff</hemmalagkort>
+                    <bortalagkort>Hull</bortalagkort>
+                    <hemmalagid>212</hemmalagid>
+                    <bortalagid>234</bortalagid>
+                    <hemmaresultat>0</hemmaresultat>
+                    <bortaresultat>4</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2368806</matchid>
+                    <utfall>2</utfall>
+                </match>
+                <match>
+                    <matchnummer>3</matchnummer>
+                    <hemmalag>Manchester C</hemmalag>
+                    <bortalag>Stoke</bortalag>
+                    <hemmalagkort>Manch.C</hemmalagkort>
+                    <bortalagkort>Stoke</bortalagkort>
+                    <hemmalagid>242</hemmalagid>
+                    <bortalagid>272</bortalagid>
+                    <hemmaresultat>1</hemmaresultat>
+                    <bortaresultat>0</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2368809</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>4</matchnummer>
+                    <hemmalag>West Bromwich</hemmalag>
+                    <bortalag>Fulham</bortalag>
+                    <hemmalagkort>West Brom</hemmalagkort>
+                    <bortalagkort>Fulham</bortalagkort>
+                    <hemmalagid>282</hemmalagid>
+                    <bortalagid>227</bortalagid>
+                    <hemmaresultat>1</hemmaresultat>
+                    <bortaresultat>1</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2368815</matchid>
+                    <utfall>X</utfall>
+                </match>
+                <match>
+                    <matchnummer>5</matchnummer>
+                    <hemmalag>West Ham</hemmalag>
+                    <bortalag>Southampton</bortalag>
+                    <hemmalagkort>West Ham</hemmalagkort>
+                    <bortalagkort>Southampt</bortalagkort>
+                    <hemmalagid>283</hemmalagid>
+                    <bortalagid>271</bortalagid>
+                    <hemmaresultat>3</hemmaresultat>
+                    <bortaresultat>1</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2368812</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>6</matchnummer>
+                    <hemmalag>Barnsley</hemmalag>
+                    <bortalag>Millwall</bortalag>
+                    <hemmalagkort>Barnsley</hemmalagkort>
+                    <bortalagkort>Millwall</bortalagkort>
+                    <hemmalagid>199</hemmalagid>
+                    <bortalagid>246</bortalagid>
+                    <hemmaresultat>1</hemmaresultat>
+                    <bortaresultat>0</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369798</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>7</matchnummer>
+                    <hemmalag>Blackpool</hemmalag>
+                    <bortalag>Birmingham</bortalag>
+                    <hemmalagkort>Blackpool</hemmalagkort>
+                    <bortalagkort>Birmingh.</bortalagkort>
+                    <hemmalagid>205</hemmalagid>
+                    <bortalagid>202</bortalagid>
+                    <hemmaresultat>1</hemmaresultat>
+                    <bortaresultat>2</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369773</matchid>
+                    <utfall>2</utfall>
+                </match>
+                <match>
+                    <matchnummer>8</matchnummer>
+                    <hemmalag>Bolton</hemmalag>
+                    <bortalag>Watford</bortalag>
+                    <hemmalagkort>Bolton</hemmalagkort>
+                    <bortalagkort>Watford</bortalagkort>
+                    <hemmalagid>203</hemmalagid>
+                    <bortalagid>281</bortalagid>
+                    <hemmaresultat>2</hemmaresultat>
+                    <bortaresultat>0</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369764</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>9</matchnummer>
+                    <hemmalag>Brighton</hemmalag>
+                    <bortalag>Wigan</bortalag>
+                    <hemmalagkort>Brighton</hemmalagkort>
+                    <bortalagkort>Wigan</bortalagkort>
+                    <hemmalagid>208</hemmalagid>
+                    <bortalagid>284</bortalagid>
+                    <hemmaresultat>1</hemmaresultat>
+                    <bortaresultat>2</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369792</matchid>
+                    <utfall>2</utfall>
+                </match>
+                <match>
+                    <matchnummer>10</matchnummer>
+                    <hemmalag>Burnley</hemmalag>
+                    <bortalag>Nottingham</bortalag>
+                    <hemmalagkort>Burnley</hemmalagkort>
+                    <bortalagkort>Nottingh.</bortalagkort>
+                    <hemmalagid>209</hemmalagid>
+                    <bortalagid>252</bortalagid>
+                    <hemmaresultat>3</hemmaresultat>
+                    <bortaresultat>1</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369751</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>11</matchnummer>
+                    <hemmalag>Charlton</hemmalag>
+                    <bortalag>Queens PR</bortalag>
+                    <hemmalagkort>Charlton</hemmalagkort>
+                    <bortalagkort>Queens PR</bortalagkort>
+                    <hemmalagid>215</hemmalagid>
+                    <bortalagid>261</bortalagid>
+                    <hemmaresultat>1</hemmaresultat>
+                    <bortaresultat>0</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369802</matchid>
+                    <utfall>1</utfall>
+                </match>
+                <match>
+                    <matchnummer>12</matchnummer>
+                    <hemmalag>Huddersfield</hemmalag>
+                    <bortalag>Sheffield W</bortalag>
+                    <hemmalagkort>Huddersf.</hemmalagkort>
+                    <bortalagkort>Sheff.W</bortalagkort>
+                    <hemmalagid>233</hemmalagid>
+                    <bortalagid>268</bortalagid>
+                    <hemmaresultat>0</hemmaresultat>
+                    <bortaresultat>2</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369769</matchid>
+                    <utfall>2</utfall>
+                </match>
+                <match>
+                    <matchnummer>13</matchnummer>
+                    <hemmalag>Reading</hemmalag>
+                    <bortalag>Blackburn</bortalag>
+                    <hemmalagkort>Reading</hemmalagkort>
+                    <bortalagkort>Blackburn</bortalagkort>
+                    <hemmalagid>262</hemmalagid>
+                    <bortalagid>201</bortalagid>
+                    <hemmaresultat>0</hemmaresultat>
+                    <bortaresultat>1</bortaresultat>
+                    <matchstatus>Avslutad</matchstatus>
+                    <matchid>2369807</matchid>
+                    <utfall>2</utfall>
+                </match>
+            </resultat>
+            <utdelning>
+                <vinstgrupp>
+                    <beteckning>13 rätt</beteckning>
+                    <antal>28 st</antal>
+                    <vinst>224 612 kr</vinst>
+                </vinstgrupp>
+                <vinstgrupp>
+                    <beteckning>12 rätt</beteckning>
+                    <antal>742 st</antal>
+                    <vinst>3 178 kr</vinst>
+                </vinstgrupp>
+                <vinstgrupp>
+                    <beteckning>11 rätt</beteckning>
+                    <antal>7 390 st</antal>
+                    <vinst>255 kr</vinst>
+                </vinstgrupp>
+                <vinstgrupp>
+                    <beteckning>10 rätt</beteckning>
+                    <antal>50 814 st</antal>
+                    <vinst>77 kr</vinst>
+                </vinstgrupp>
+            </utdelning>
+        </spelomgang>
+    </spelprodukt>
+</spelresultat>

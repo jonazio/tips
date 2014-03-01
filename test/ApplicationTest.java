@@ -5,7 +5,7 @@ import java.util.Map;
 
 import models.results.Tipsrow;
 
-import org.codehaus.jackson.JsonNode;
+import com.fasterxml.jackson.core.*;
 import org.junit.*;
 
 import play.mvc.*;
@@ -41,14 +41,14 @@ public class ApplicationTest {
         Content html = views.html.index.render("Your new application is ready.");
         assertThat(contentType(html)).isEqualTo("text/html");
         assertThat(contentAsString(html)).contains("Antal rätt:");
-    }*/
-    
+    }
+
     @Test
     public void testCompare() {
     	Tipsrow tipsrow = new Tipsrow("1X2");
     	assertFalse(tipsrow.compare("111"));
     	assertTrue(tipsrow.compare("1X2"));
     }
-  
+  */
    
 }

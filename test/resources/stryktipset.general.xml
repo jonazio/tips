@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<kupong>
+    <produktid>1</produktid>
+    <produktnamn>Stryktipset</produktnamn>
+    <omgang>4327</omgang>
+    <spelstart>2014-03-02 07:00:00</spelstart>
+    <spelstopp>2014-03-08 15:59:00</spelstopp>
+    <spelvecka>201410</spelvecka>
+    <is13plus>0</is13plus>
+    <dubbelvinsten>0</dubbelvinsten>
+    <matchlista>
+        <match>
+            <matchnummer>1</matchnummer>
+            <matchid>2368835</matchid>
+            <ligaid>6</ligaid>
+            <sasongid>2368542</sasongid>
+            <hemmalag>Chelsea</hemmalag>
+            <bortalag>Tottenham</bortalag>
+            <hemmalagkort>Chelsea</hemmalagkort>
+            <bortalagkort>Tottenham</bortalagkort>
+            <matchstart>2014-03-08 18:30:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>2</matchnummer>
+            <matchid>2368826</matchid>
+            <ligaid>6</ligaid>
+            <sasongid>2368542</sasongid>
+            <hemmalag>Cardiff</hemmalag>
+            <bortalag>Fulham</bortalag>
+            <hemmalagkort>Cardiff</hemmalagkort>
+            <bortalagkort>Fulham</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>3</matchnummer>
+            <matchid>2368820</matchid>
+            <ligaid>6</ligaid>
+            <sasongid>2368542</sasongid>
+            <hemmalag>Crystal P</hemmalag>
+            <bortalag>Southampton</bortalag>
+            <hemmalagkort>Crystal P</hemmalagkort>
+            <bortalagkort>Southampt</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>4</matchnummer>
+            <matchid>2368825</matchid>
+            <ligaid>6</ligaid>
+            <sasongid>2368542</sasongid>
+            <hemmalag>Norwich</hemmalag>
+            <bortalag>Stoke</bortalag>
+            <hemmalagkort>Norwich</hemmalagkort>
+            <bortalagkort>Stoke</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>5</matchnummer>
+            <matchid>2369912</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Barnsley</hemmalag>
+            <bortalag>Nottingham</bortalag>
+            <hemmalagkort>Barnsley</hemmalagkort>
+            <bortalagkort>Nottingh.</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>6</matchnummer>
+            <matchid>2369922</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Birmingham</hemmalag>
+            <bortalag>Queens PR</bortalag>
+            <hemmalagkort>Birmingh.</hemmalagkort>
+            <bortalagkort>Queens PR</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>7</matchnummer>
+            <matchid>2369961</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Blackpool</hemmalag>
+            <bortalag>Bournemouth</bortalag>
+            <hemmalagkort>Blackpool</hemmalagkort>
+            <bortalagkort>Bournem.</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>8</matchnummer>
+            <matchid>2369898</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Brighton</hemmalag>
+            <bortalag>Reading</bortalag>
+            <hemmalagkort>Brighton</hemmalagkort>
+            <bortalagkort>Reading</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>9</matchnummer>
+            <matchid>2369913</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Derby</hemmalag>
+            <bortalag>Millwall</bortalag>
+            <hemmalagkort>Derby</hemmalagkort>
+            <bortalagkort>Millwall</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>10</matchnummer>
+            <matchid>2369935</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Doncaster</hemmalag>
+            <bortalag>Huddersfield</bortalag>
+            <hemmalagkort>Doncaster</hemmalagkort>
+            <bortalagkort>Huddersf.</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>11</matchnummer>
+            <matchid>2369934</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Leeds</hemmalag>
+            <bortalag>Bolton</bortalag>
+            <hemmalagkort>Leeds</hemmalagkort>
+            <bortalagkort>Bolton</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>12</matchnummer>
+            <matchid>2369899</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Middlesbrough</hemmalag>
+            <bortalag>Ipswich</bortalag>
+            <hemmalagkort>Middlesbr</hemmalagkort>
+            <bortalagkort>Ipswich</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+        <match>
+            <matchnummer>13</matchnummer>
+            <matchid>2369890</matchid>
+            <ligaid>7</ligaid>
+            <sasongid>2368564</sasongid>
+            <hemmalag>Yeovil</hemmalag>
+            <bortalag>Sheffield W</bortalag>
+            <hemmalagkort>Yeovil</hemmalagkort>
+            <bortalagkort>Sheff.W</bortalagkort>
+            <matchstart>2014-03-08 16:00:00</matchstart>
+        </match>
+    </matchlista>
+</kupong>

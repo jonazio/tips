@@ -19,12 +19,11 @@ import play.mvc.Result;
 import play.mvc.Http.MultipartFormData;
 import play.mvc.Http.MultipartFormData.FilePart;
 import util.*;
-import views.html.fileupload.*;
 import views.html.*;
-import models.*;
 import models.results.TipsCoupon;
 import models.results.TipsResult;
 import models.results.Tipsrow;
+import views.html.fileupload.fileupload;
 
 public class Tips extends Controller {
 	
