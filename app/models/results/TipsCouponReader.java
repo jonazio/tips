@@ -12,7 +12,7 @@ import util.TipsUtil;
 
 // database support not necessary right now TODO
 //@Entity
-public class TipsCoupon extends Model{
+public class TipsCouponReader extends Model{
 	
 	//@Id
 	public Long id; 
@@ -23,11 +23,11 @@ public class TipsCoupon extends Model{
 	//@OneToMany(cascade = CascadeType.REMOVE)
 	public List<Tipsrow> tipsrows = new ArrayList<Tipsrow>();
 	
-	public TipsCoupon (List<Tipsrow> tipsrows) {
+	public TipsCouponReader(List<Tipsrow> tipsrows) {
 		this.tipsrows = tipsrows;
 	}
 	
-	public TipsCoupon (Scanner scanner){
+	public TipsCouponReader(Scanner scanner){
 		tipsrows.clear();
 		// first row in the file determines the type of tips (euro/stryk etc)
 		if (scanner.hasNextLine()){

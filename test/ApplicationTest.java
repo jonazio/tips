@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import models.TipsCoupon;
 import models.results.Tipsrow;
 
 import com.fasterxml.jackson.core.*;
@@ -17,6 +18,7 @@ import play.i18n.Lang;
 import play.libs.F;
 import play.libs.F.*;
 
+import static org.fest.assertions.Assertions.assertThat;
 import static play.test.Helpers.*;
 import static org.fest.assertions.Assertions.*;
 import static org.junit.Assert.*;
@@ -30,7 +32,7 @@ import static org.junit.Assert.*;
 */
 public class ApplicationTest {
 
-    @Test 
+    @Test
     public void simpleCheck() {
         int a = 1 + 1;
         assertThat(a).isEqualTo(2);
