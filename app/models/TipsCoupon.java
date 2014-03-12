@@ -4,14 +4,15 @@ import play.db.ebean.Model;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Table(name="Tipscoupon")
 @Entity public class TipsCoupon extends Model {
 
     @Id
-    @Column(name="tips_id")
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="tips_seq")
     @SequenceGenerator(name="tips_seq", sequenceName="tipscoupon_seq", allocationSize=21)
+    @Column(name="tips_id")
     public Long id;
 
     @Column(name="product_type")
@@ -29,6 +30,9 @@ import java.util.Date;
     @Column(name="week")
     public Long week;
 
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "tipsCoupon")
+    public List<TipsCouponMatches> matches;
+
     public static Finder<Long, TipsCoupon> find = new Finder(Long.class, TipsCoupon.class);
 
     public static TipsCoupon find (Long id){
@@ -39,16 +43,12 @@ import java.util.Date;
         tipsCoupon.save();
     }
 
-    public static void update(Long id, TipsCoupon tipsCoupon){
-        tipsCoupon.update(id, tipsCoupon);
+    public static void update(Long tipsId, TipsCoupon tipsCoupon){
+        tipsCoupon.update(tipsId, tipsCoupon);
     }
 
     public static void delete(Long id){
         find.ref(id).delete(id);
-    }
-
-    public Long getId(){
-        return id;
     }
 
 }
